@@ -15,17 +15,35 @@ class Main extends React.Component {
 
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Intro</h2>
-          <span className="image main"><img src={pic01} alt="" /></span>
-          <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+          <p> A retired Army combat veteran, Peter started yoga to manage the stress of living as a civilian with post-traumatic stress. </p>
+          <span className="image main"><img src={pic01} style={{"width":"200px", "height":"200px", "borderRadius":"50%", "float":"left", "padding":"10px"}} alt="" /></span>
+          <p>He has been teaching Korean yoga, meditation, and Qi Gong for the last three years, and has recently completed 200-hour vinyasa flow teacher training.</p>
+          <p> His 22 years of bodywork experience in reiki, sport and deep tissue massage, provide him with a wealth of knowledge about body alignment, ergonomics, and an intuitive understanding of his student’s physical and energetic bodies. Peter’s teaching is always changing and evolving, and he brings a playful energy to classes that are often described as physically challenging and relaxing. </p>
           {close}
         </article>
 
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Work</h2>
           <span className="image main"><img src={pic02} alt="" /></span>
-          <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-          <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+          <p><a href="https://www.yogaalliance.org/TeacherPublicProfile?tid=218980&fbclid=IwAR1b-02TXgih9VfUFh2AAFRqWWH4JQgFKlLjqBW6N9TPY5_UaVolqeOVsEY">Yoga Alliance</a></p>
+          <p><strong>Power Brain Training Center, Fairfax, VA</strong><br/>
+  Yoga Instructor / Assistant Studio Manager <em>June 2017 – December 2017</em><br/>
+Taught between 3 to 8 group yoga classes for 4 to 16 students a week<br/>
+Taught one Power Brain (kids yoga) class for 1 to 3 students a week<br/>
+Taught 1 to 3 one-on-one individual yoga sessions a week<br/>
+<br/>
+<strong>Body and Brain Yoga, Alexandria, VA / Burke, VA</strong><br/>
+  Outreach Coordinator / Yoga Instructor / Workshop Assistant   <em>April 2017 – June 2017</em><br/>
+Taught between 1 to 3 group yoga classes for 3 to 9 students a week<br/><br/>
+
+<strong>Body and Brain Yoga, Beltsville, MD</strong><br/>
+  Yoga Instuctor   <em>December 2016 – January 2017</em><br/>
+Taught a weekly group yoga class for 5 to15 students<br/>
+  Assistant Yoga Instructor (September, 2014 – November, 2016)<br/>
+Assisted primary instructors during outreach events, and group instruction<br/>
+Maintained yoga studio, managed stock, and assisted with yoga studio marketing<br/>
+Instructed yoga classes when primary instructors were unavalible<br/>
+</p>
           {close}
         </article>
 
@@ -37,30 +55,8 @@ class Main extends React.Component {
         </article>
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Contact</h2>
-          <form method="post" action="#">
-            <div className="field half first">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
-            </div>
-            <ul className="actions">
-              <li><input type="submit" value="Send Message" className="special" /></li>
-              <li><input type="reset" value="Reset" /></li>
-            </ul>
-          </form>
-          <ul className="icons">
-            <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-            <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-            <li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-            <li><a href="#" className="icon fa-github"><span className="label">GitHub</span></a></li>
+          <ul className="icons" style={{"textAlign":"center"}}>
+            <li><a href="http://www.facebook.com/peterturtlewolf" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
           </ul>
           {close}
         </article>
